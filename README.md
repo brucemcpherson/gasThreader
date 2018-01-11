@@ -13,9 +13,9 @@ We've all come across the problem of the run time limit, trigger timing accuracy
 GasThreader 
 
 is my latest solution to these conundrums and has these features
--Run stages in sequence
--Automatically split stages of jobs into manageable chunks that can be run in parallel.
--Watch progress on a webapp dashboard.
--Persist all the results Server side, and have access to any previous stage.
--Automatically reduce the results of parallel chunks.
--Be restartable (not yet, but soon)
+- Run stages in sequence
+- Automatically split stages of jobs into manageable chunks that can be run in parallel.
+- Watch progress on a webapp dashboard.
+- Persist all the results Server side, and have access to any previous stage.
+- Automatically reduce the results of parallel chunks.
+- Be restartable (not yet, but soon)
