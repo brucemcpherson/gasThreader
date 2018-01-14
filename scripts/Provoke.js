@@ -25,6 +25,17 @@ function exposeRun(namespace, method, argArray) {
  */
 var Provoke = this.HtmlService ? null :(function (ns) {
 
+
+  // mini expbackoff to recover from 409 communicationerrors
+  ns.MAX_ATTEMPTS = 3;
+  ns.EXP_TIME = 667;
+  
+  function isRedoable (err) { 
+    const es = err && err.toString();
+    return es && ["NetworkError: "].some (function (d) {
+      return es.slice (0,d.length) === d;
+    });
+  }
   /**
   * run something asynchronously
   * @param {string} namespace the namespace (null for global)
@@ -42,20 +53,41 @@ var Provoke = this.HtmlService ? null :(function (ns) {
       throw new Error ('need at least a namespace and method');
     }
 
-    // this will return a promise
-    return new Promise(function ( resolve , reject ) {
+    // wrap this is a new promise as runner may go multiple times
+    return new Promise (function (resolve, reject) {
+      return runner();
+
+      // this might be executed multiple times
+      //if we get communication errors
+      function runner (attempt) {
       
-      google.script.run
-    
-      .withFailureHandler (function(err) {
-        reject (err);
-      })
-    
-      .withSuccessHandler (function(result) {
-        resolve (result);
-      })
-    
-      .exposeRun (namespace,method,runArgs); 
+        // for first call
+        attempt = attempt || 0;
+        google.script.run
+      
+        .withFailureHandler (function(err) {
+          console.log ('error' ,err);
+          if (attempt < ns.MAX_ATTEMPTS  &&  isRedoable (err) ) {
+            // retry because of communication errors - basic exp backoff
+            const waitTime = Math.pow(2, attempt) * ns.EXP_TIME + (ns.EXP_TIME/2*Math.random());
+            attempt++;
+            return ns.loiter ()
+              .then (function () {
+                console.log ("Provoked exp backoff retry " + attempt + " after waiting for " + waitTime);
+                return runner (attempt);
+              });
+          }
+          else {
+            reject (err);
+          }
+        })
+      
+        .withSuccessHandler (function(result) {
+          resolve (result);
+        })
+      
+        .exposeRun (namespace,method,runArgs); 
+      };
     });
     
     
