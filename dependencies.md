@@ -1,5 +1,5 @@
 # Google Apps Script Project: gasThreader
-This repo (gasThreader) was automatically updated on 14 January 2018 10:59:33 GMT by GasGit
+This repo (gasThreader) was automatically updated on 31 October 2018 11:44:00 GMT by GasGit
 
 For more information see the [desktop liberation site](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/gettinggithubready "desktop liberation") or [contact me on G+](https://plus.google.com/+BruceMcpherson "Bruce McPherson - GDE")
 ## Details for Apps Script project gasThreader
@@ -35,21 +35,23 @@ Job| server_js
 ### Directly referenced libraries
 *library*|*identifier*|*key*|*version*|*dev mode*|*source*|
 --- | --- | --- | --- | --- | --- 
-cDbAbstraction| cDbAbstraction|MHfCjPQlweartW45xYs6hFai_d-phDA33|42|no|[here](libraries/cDbAbstraction "library source")
-cDriverFusion| cDriverFusion|MyhWrchJeGiOowTfrMNidiSz3TLx7pV4j|10|no|[here](libraries/cDriverFusion "library source")
+cDbAbstraction| cDbAbstraction|1Ddsb4Y-QDUqcw9Fa-rJKM3EhG2caosS9Nhch7vnQWXP7qkaMmb1wjmTl|42|no|[here](libraries/cDbAbstraction "library source")
+cDriverFusion| cDriverFusion|1wPX-hMhaX_vk_3cAlZ4CUJ6GeNOsm2VrQpUqG4QU3GWeM45AVMiOU0OD|10|no|[here](libraries/cDriverFusion "library source")
 ### All dependencies and sub dependencies
 *library*|*identifier*|*key*|*version*|*dev mode*|*source*|
 --- | --- | --- | --- | --- | --- 
-cDbAbstraction| cDbAbstraction|MHfCjPQlweartW45xYs6hFai_d-phDA33|42|no|[here](libraries/cDbAbstraction "library source")
-cFlatten| cFlatten|MqxKdBrlw18FDd-X5zQLd7yz3TLx7pV4j|9|no|[here](libraries/cFlatten "library source")
-cUseful| cUseful|Mcbr-v4SsYKJP7JMohttAZyz3TLx7pV4j|77|no|[here](libraries/cUseful "library source")
-cNamedLock| cNamedLock|Mpv7vUR0126U53sfSMXsAPai_d-phDA33|15|no|[here](libraries/cNamedLock "library source")
-cCacheHandler| cCacheHandler|M3reA5eBxtwxSqCEgPywb9ai_d-phDA33|15|no|[here](libraries/cCacheHandler "library source")
-cUAMeasure| cUAMeasure|MIHfxr-fc_7bXa1l0Dkk0oqi_d-phDA33|6|no|[here](libraries/cUAMeasure "library source")
-cDriverFusion| cDriverFusion|MyhWrchJeGiOowTfrMNidiSz3TLx7pV4j|10|no|[here](libraries/cDriverFusion "library source")
+cDbAbstraction| cDbAbstraction|1Ddsb4Y-QDUqcw9Fa-rJKM3EhG2caosS9Nhch7vnQWXP7qkaMmb1wjmTl|42|no|[here](libraries/cDbAbstraction "library source")
+cFlatten| cFlatten|12actArnmhP0hZTQng9Ysav1ZA3xfrkm1JA024mxDx4x4MEcPlc8Y2YDY|9|no|[here](libraries/cFlatten "library source")
+cNamedLock| cNamedLock|1uNcsHIUpZOJIT_ZedTa2mBE_gqCo0mH5OrNJMk4NWdyCNHQfiQjYXZ6u|15|no|[here](libraries/cNamedLock "library source")
+cCacheHandler| cCacheHandler|1U6j9t_3ONTbhTCvhjwANMcEXeHXr4shgzTG0ZrRnDYLcFl3_IH2b2eAY|15|no|[here](libraries/cCacheHandler "library source")
+cUseful| cUseful|1EbLSESpiGkI3PYmJqWh3-rmLkYKAtCNPi1L2YCtMgo2Ut8xMThfJ41Ex|32|no|[here](libraries/cUseful "library source")
+cUAMeasure| cUAMeasure|17gzIYCpQ_8jN8rR1mQ8POa5VS5C4TYTiDuEIlpEMQmRGe2S51MvKf2LO|6|no|[here](libraries/cUAMeasure "library source")
+cDriverFusion| cDriverFusion|1wPX-hMhaX_vk_3cAlZ4CUJ6GeNOsm2VrQpUqG4QU3GWeM45AVMiOU0OD|10|no|[here](libraries/cDriverFusion "library source")
 ### Enabled Google Services
 *library*|*identifier*|*version*
 --- | --- | --- 
-FusionTables| FusionTables|unknown
-###Need more detail ?
+FusionTables| FusionTables|v2
+### Scopes required
+no scopes discovered
+### Need more detail ?
 You can see [full project info as json here](info.json)
