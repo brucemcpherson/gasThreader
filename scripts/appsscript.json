@@ -1,0 +1,25 @@
+{
+  "timeZone": "Europe/London",
+  "dependencies": {
+    "enabledAdvancedServices": [{
+      "userSymbol": "FusionTables",
+      "serviceId": "fusiontables",
+      "version": "v2"
+    }],
+    "libraries": [{
+      "userSymbol": "cDbAbstraction",
+      "libraryId": "1Ddsb4Y-QDUqcw9Fa-rJKM3EhG2caosS9Nhch7vnQWXP7qkaMmb1wjmTl",
+      "version": "42"
+    }, {
+      "userSymbol": "cDriverFusion",
+      "libraryId": "1wPX-hMhaX_vk_3cAlZ4CUJ6GeNOsm2VrQpUqG4QU3GWeM45AVMiOU0OD",
+      "version": "10"
+    }]
+  },
+  "webapp": {
+    "access": "MYSELF",
+    "executeAs": "USER_DEPLOYING"
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": ["https://www.googleapis.com/auth/fusiontables.readonly", "https://www.googleapis.com/auth/drive"]
+}
