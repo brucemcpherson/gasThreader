@@ -1,10 +1,10 @@
 # Google Apps Script Project: gasThreader
 This repo (gasThreader) was automatically created on 11 January 2018 18:07:10 GMT by GasGit
-for more information see the [desktop liberation site](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/gettinggithubready "desktop liberation")
+for more information see the [desktop liberation site](https://ramblings.mcpher.com/drive-sdk-and-github/getting-your-apps-scripts-to-github/ "desktop liberation")
 you can see [library and dependency information here](dependencies.md)
 
 For info see
-http://ramblings.mcpher.com/Home/excelquirks/gasthreader
+https://ramblings.mcpher.com/orchestration-of-apps-scripts-parallel-threads-and-defeating-quotas/
 
 Quotas
 
