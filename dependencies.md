@@ -1,7 +1,7 @@
 # Google Apps Script Project: gasThreader
 This repo (gasThreader) was automatically updated on 31 October 2018 11:44:00 GMT by GasGit
 
-For more information see the [desktop liberation site](http://ramblings.mcpher.com/Home/excelquirks/drivesdk/gettinggithubready "desktop liberation") or [contact me on G+](https://plus.google.com/+BruceMcpherson "Bruce McPherson - GDE")
+For more information see the [desktop liberation site](https://ramblings.mcpher.com/drive-sdk-and-github/getting-your-apps-scripts-to-github/ "desktop liberation") or [contact me on Gitter](https://gitter.im/desktopliberation/community - GDE")
 ## Details for Apps Script project gasThreader
 Where possible directly referenced or sub referenced library sources have been copied to this repository, or you can include the library references shown. 
 The shared link for [gasThreader is here](https://script.google.com/d/1XFd1pFQoTSzWYEvwNa1ruyLzu2VvVduQti4CjP4Kuxx8aefy0Ml9PvY6/edit?usp=sharing "open in the GAS IDE")
