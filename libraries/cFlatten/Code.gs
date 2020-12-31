@@ -183,6 +183,6 @@ Flattener.prototype.isDateObject = function (ob) {
  * @return {Array.object} an array of heading values
  **/ 
 Flattener.prototype.getHeadings = function(obs) {
-  return Object.keys(self.getHeadingMap(obs));
+  return Object.keys(this.getHeadingMap(obs));
 };
   
