@@ -71,7 +71,7 @@ function DbAbstraction ( driverLibrary , options) {
   var disableCache = optDisableCache || false;
   var cacheCommunity = options.cachecommunity;
   var currentLock_ = null;
-  var private = options.private;
+  var prv = options.private;
   
   /** 
    * give access to constants
@@ -308,7 +308,7 @@ function DbAbstraction ( driverLibrary , options) {
   var driver = self.setDriver();
   var type = driver.getType();
   var cacheSilo = 's'+siloId+'t'+type+'d'+driverSpecific;
-  var cacheHandler = new cCacheHandler.CacheHandler(expiry,cacheSilo,private,disableCache,optSpecificCache,cacheCommunity);
+  var cacheHandler = new cCacheHandler.CacheHandler(expiry,cacheSilo,prv,disableCache,optSpecificCache,cacheCommunity);
   var cacheVoid = new cCacheHandler.CacheHandler(expiry*2,cacheSilo,false,false,null,'void');
   var transactionId_;
   
@@ -858,7 +858,7 @@ function DbAbstraction ( driverLibrary , options) {
     // add quotes if necessary
     var theQuote = optTheQuote || "'";
     var fType = optForce ? optForce.toUpperCase() : '';
-    Logger.log('optforce ' + fType);
+    
     if ( ( fType !== "NUMBER") || (!fType && (typeof item === "string" || cUseful.isDateObject(item))) ) {
       return theQuote + item.toString().replace(theQuote, "\\" + theQuote ) + theQuote;
     }
